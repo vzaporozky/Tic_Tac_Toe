@@ -1,14 +1,15 @@
-let main_block:object = document.querySelector('.main');
+import '../css/style.sass';
+
+let main_block = document.querySelector('.main');
 let menu_play = document.querySelector('.menu_play') as HTMLInputElement | null;
 let player_x = document.querySelector('.player_x') as HTMLInputElement | null;
 let player_o = document.querySelector('.player_o') as HTMLInputElement | null;
 let menu_start = document.querySelector('.menu') as HTMLInputElement | null;
 
-main_block?.addEventListener('click', function(event : any):void{
+main_block?.addEventListener('click', function (event: any): void {
     console.log('fdas')
 })
-
-
+let fds;
 
 
 /*

@@ -8,6 +8,10 @@
 // variable.main_block?.addEventListener('click', function(event){
 //     console.log('fdas')
 // })
+
+// import '../css/style.sass'
+// import '../css/style.css'
+
 main_block = document.querySelector('.main');
 menu_play = document.querySelector('.menu_play');
 player_x = document.querySelector('.player_x');
@@ -16,6 +20,8 @@ menu_start = document.querySelector('.menu');
 main_block === null || main_block === void 0 ? void 0 : main_block.addEventListener('click', function (event) {
     console.log('fdas');
 });
+
+console.log('zbs')
 /*
     сделать сетку в html            +
     сделать меню выбора html        +
