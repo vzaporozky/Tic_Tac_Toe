@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env webpack --mode development",
+    "dev": "cross-env NODE-ENV=development webpack --mode development",
     "build": "cross-env webpack --mode production",
-    "watch": "cross-env webpack --mode development --watch",
-    "start": "cross-env webpack-dev-server --mode development --open",
+    "watch": "cross-env NODE-ENV=development webpack --mode development --watch",
+    "start": "cross-env NODE-ENV=development webpack-dev-server --mode development --open",
     "stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json"
   },
   "browserslist": "> 0.25%, not dead",

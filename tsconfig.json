@@ -4,9 +4,26 @@
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "allowJs": true,
+        "alwaysStrict": true,
+        "baseUrl": ".",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "moduleResolution": "node",
+        "target": "ESNext",
+        "lib": [
+            "dom",
+            "es2017"
+        ]
     },
     "files": [
         "./src/js/script.ts",
+    ],
+    "exclude": [
+        "static",
+        "build",
+        "dist",
+        "node_modules"
     ]
 }

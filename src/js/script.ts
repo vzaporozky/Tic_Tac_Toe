@@ -7,9 +7,20 @@ let player_o = document.querySelector('.player_o') as HTMLInputElement | null;
 let menu_start = document.querySelector('.menu') as HTMLInputElement | null;
 
 main_block?.addEventListener('click', function (event: any): void {
-    console.log('fdas')
+    let chosen:boolean = false;
+    
+    if(!event.target.classList.contains('selected')) {
+        event.target.classList.add('selected'); 
+        if(chosen == false){
+            event.target.innerHTML = 'O';
+            chosen = true;
+        }
+        if(chosen == true){
+            event.target.innerHTML = 'X';
+            chosen = false;
+        }
+    }
 })
-let fds;
 
 
 /*
@@ -18,7 +29,7 @@ let fds;
     стилизовать с помощью css       +
     ВЫУЧИТЬ TS                      +
 
-    сделать обработчик событий на весь блок (применять делегирование)
+    сделать обработчик событий на весь блок (применять делегирование)               +
     при нажатии на любой блок, туда вставляется Х/O
     сделать булеевую переменную для опеределнеия, что именно будет выводить в блоке X/O
     отображать в правой менющке, кто именно ходит
